@@ -15,7 +15,7 @@ class EBook(Book):
 		super().__init__(title, author)
 
 	def get_details(self):
-		return f"EBook: {self.title} by {self.author}, filesize: {self.file_size}KB"
+		return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
 	def __str__(self):
 		return self.get_details()
@@ -26,7 +26,7 @@ class PrintBook(Book):
 		self.page_count = page_count
 
 	def get_details(self):
-		return f"PrintBook: {self.title} by {self.author}, page count: {self.page_count}"
+		return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 	def __str__(self):
 		return self.get_details()
