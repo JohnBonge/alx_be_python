@@ -32,8 +32,7 @@ class PrintBook(Book):
 		return self.get_details()
 
 class Library():
-	def __init__(self):
-		super().__init__(title, author)
+	def __init__(self):		
 		self.books = []
 
 	def add_book(self, book):
